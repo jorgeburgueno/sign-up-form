@@ -111,6 +111,7 @@ button {
 button:hover{
     background-color: #07eb25;
     color: black;
+    pointer-events: auto;
 }
 
 .log-in {
