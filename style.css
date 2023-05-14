@@ -1,62 +1,136 @@
-html, body {
-    width: 100%;
-    height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;   
-    font-size: 20px;      
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-body {
-    display: flex;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    justify-content: center;
-    width:100vw;    
-}
-.logo {
-    display: flex;
-    flex-flow: row wrap;
-    position: relative;
-    top: 20vh;
-    align-items: center;
-    background-color: rgba(0,0,0,.4);
-    color: #fff;
-}
-.empresa {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-.jk{
-    height: 20vh;
-}
-.izquierda {
-    background-image: url("fondo.jpeg") ;    
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40vw;
+
+.contenido {
+    width: 100vw;
     height: 100vh;
 }
+
+.contenido, .logo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*izquierda */ 
+
+.izquierda{
+    background-image: url(fondo.jpeg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.logo {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+
+}
+
+.kamel {
+    height: 10vh;
+}
+
+
+/* lado derecho */
+
 .derecha {
-    width: min(80ch, 100% - 4rem);
-    height: ;
-    padding: 50px;
-    margin-right: 0;
-    margin-top: 0;
-    
+    width: 60vw;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.left {
+    padding-left: 3vw;
+}
+.texto {
+    font-weight: bolder;
+    width: 90%;
+    font-size: 1.2rem;
     
 }
-label,input{
-    display:flex;
-    flex-wrap: wrap;
+
+.texto p:nth-child(3){
+    margin: 40px 0 80px;
+}
+
+/*forms */
+.formas{
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+}
+.titulo{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;    
+}
+
+.input:focus {
+    outline: none;
+    border: 2px solid #ee03f7;
+}
+
+button {
+    background-color: rgba(49, 13, 209, 0.979);
+    color: white;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border: 2px solid #080808;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+button:hover{
+    background-color: #07eb25;
+    color: black;
+}
+
+.log-in {
+    display: flex;
+    gap: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    font: bolder;
+    
+}
+
+a:hover{
+    color: black;
+}
+
+input:invalid:required {
+    background-color: rgba(172, 20, 20, 0.1);
     
   }
-.contenedor{
-    
-}
-
-
 

@@ -4,54 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="contenido">
     <div class="izquierda">
       <div class="logo">
-        <img src="logo.png" alt="logo" class="jk">
-        <div class="empresa">EMPRESA</div>
-      </div>
+        <img src="logo.png" alt="logo" class="kamel">
+        <h1 class="empresa">EMPRESA</h1>
+      </div>               
     </div>
     <div class="derecha">
-        <h2>This is not a real online service! You know you need something 
-            like this in your life to help you realize your deepest dreams.
-            Sign up now to get started.
-        
-            You <em>know<em> you want to.
-        </h2>
-        <h2> Let's do this!</h2>
-       <div class="contenedor">
-        <form action="ejemplo.com" method="post">
-            <label for="Nombres">Nombres</label>
-            <input type="text" id="Nombres"/>
+      <div class="texto left">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <form action="#">
+        <div class="formas left">
+          <p class="titulo">Let's do this!</p>
 
-            <label for="Apellidos">Apellidos</label>
-            <input type="text" id="Apellidos">
+          <div class="input">
+            <label for="nombres">Nombre completo</label>
+            <input type="text" name="nombres" id="nombres" required>
+          </div>
 
-            <label for="Email">EMAIL</label>
-            <input type="email" name="Email" id="Email" required>
+          <div class="input">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" >
+          </div>
 
-            <label for="Tel">Telefono</label>
-            <input type="tel" name="Tel" id="Tel">
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
+          </div>
 
-            <label for="Contraseña">Contraseña</label>
-            <input type="password" name="Contraseña" id="Contraseña" required>
+          <div class="input">
+            <label for="tel">Numero telefonico</label>
+            <input type="number" name="tel" id="tel" >
+          </div>
 
-            <label for="Confimar">Confirmar Contraseña</label>
-            <input type="password" name="Confirmar" id="Confirmar" required>
-        </form>
-    </div>
-        <div class="registra">
-        <form action="ejemplo.com" method="post">
-            <input type="submit" value="submit">
+          <div class="input">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña" minlength="8" maxlength="12" required>
+          </div>
+
+          <div class="input">
+            <label for="confirmar-contraseña">Confirmar contraseña</label>
+            <input type="password" name="confirmar-contraseña" id="confirmar-contraseña" minlength="8" maxlength="12" required>
+          </div>
         </div>
-        
-        <h3>Ya tienes una cuenta? Log in</h3>
-        
+        <div class="btn left"><button type="submit">Crear Cuenta</button></div>
+      </form>
+      <div class="log-in left"><p>Ya tienes una cuenta?</p><a href="#">Log in</a></div>
     </div>
+  </div> 
 
-    
 </body>
 </html>
